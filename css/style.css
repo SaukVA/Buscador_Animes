@@ -9,4 +9,40 @@ html,body{
     align-items: center;
     flex-direction: column;
     font-size: x-large;
+    height: 100%;
+    color: white;
+}
+
+body{
+    gap: 10px;
+    margin: 0;
+    width: 90%;
+    background: linear-gradient(325deg, #25D2BD, #AB83C5);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title__text{
+    font-size: 52px;
+    margin: 0;
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.69);
+}
+
+.title__image{
+    width: 200px;
+    height: 200px;
+}
+
+.search-var{
+    background-color: white;
+    box-shadow: 3px 2px 7px rgba(0,0,0,0.69);
+    width: 100%;
+    max-width: 900px;
+    height: 50px;
+    border-radius: 25px;
 }
