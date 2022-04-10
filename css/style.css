@@ -1,22 +1,23 @@
 
 /* Importar estetica de la letra */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 html,body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     font-size: x-large;
-    height: 100%;
+    min-height: 100%;
     color: white;
 }
 
 body{
     gap: 10px;
     margin: 0;
+    margin-top: 20px;
     width: 90%;
+    flex:auto;
     background: linear-gradient(325deg, #25D2BD, #AB83C5);
 }
 
@@ -24,7 +25,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .title__text{
@@ -34,15 +35,60 @@ body{
 }
 
 .title__image{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 .search-var{
     background-color: white;
-    box-shadow: 3px 2px 7px rgba(0,0,0,0.69);
+    box-shadow: 13px 12px 23px -9px rgba(0,0,0,0.5);
     width: 100%;
     max-width: 900px;
     height: 50px;
     border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-var__input{
+    height: 70%;
+    width: 80%;
+    font-size: x-large;
+    margin-left: 20px;
+    border: transparent;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-var__lens{
+    margin-right: 20px;
+    width: 30px;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.footer__text{
+    font-size: 15px;
+    margin: 0;
+}
+
+.footer__social{
+    display: flex;
+    align-items: center;
 }
