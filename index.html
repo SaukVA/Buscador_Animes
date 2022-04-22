@@ -7,6 +7,7 @@
     <title>Anime Finder 🔍</title>
     <link rel="shortcut icon" href="./image/icon-anime.svg" type="image/svg">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
 </head>
 <body>
     <div class="title">
@@ -14,8 +15,8 @@
         <h1 class="title__text">Anime Finder</h1>
     </div>
     <div class="search-var">
-        <input type="text" name="anime" id="input" class="search-var__input" placeholder="Dragon Ball, Death Note, Shingeki No Kyojin...">
-        <img src="./image/lupa.png" alt="Lupa" class="search-var__lens">
+        <input id="input" class="search-var__input" type="text" name="anime" placeholder="Dragon Ball, Death Note, Shingeki No Kyojin...">
+        <img id="lens" class="search-var__lens" src="./image/lupa.png" alt="Lupa">
     </div>
     <div class="content">
     </div>
@@ -29,3 +30,4 @@
     </div>
 </body>
 </html>
+<script src="./javascript/search.js"></script>

@@ -69,8 +69,21 @@ body{
 }
 
 .content{
+    display: flex;
+    justify-content: center;
     height: 100%;
     width: 100%;
+    padding-top: 10px;
+}
+
+.anime{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.anime__image{
+    border-radius: 8px;
 }
 
 .footer{
