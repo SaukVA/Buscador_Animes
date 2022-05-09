@@ -2,6 +2,9 @@ const URL_API = "https://api.jikan.moe/v4/anime?q=";
 const lens = document.querySelector('#lens');
 const input = document.querySelector('#input');
 const content = document.querySelector('.content');
+const error = document.createElement("h2");
+error.style.color = '#b75b5b';
+var animes =  new Array(); 
 
 class Anime {
     constructor(anime){
@@ -43,16 +46,17 @@ const search = () =>{
         fetch(URL_API + title)
             .then(response => response.json())
             .then(json => {
-                if(json.data[0]){    
-                    let anime = new Anime(json.data[0]);
+                if(json.data[0]){
+                    animes = new Array();
+                    json.data.forEach(dates => {
+                        animes.push(new Anime(dates));
+                    });                    
                     content.innerHTML = "";
-                    content.appendChild(anime.toElement());
+                    content.appendChild(animes[0].toElement());
                 }
                 else{
-                    let error = document.createElement("h2");
-                    error.style.color = '#b75b5b';
-                    error.textContent = 'No existe el anime "' + title + '"';
                     content.innerHTML = "";
+                    error.textContent = 'No existe el anime "' + title + '"';
                     content.appendChild(error);
                 }
             });

@@ -1,4 +1,3 @@
-
 /* Importar estetica de la letra */
 
 html,body{
@@ -26,6 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
 .title__text{
