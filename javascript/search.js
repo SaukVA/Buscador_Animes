@@ -44,10 +44,15 @@ class Anime {
     /* Función que nos devuelve solamente la imagen del anime */
     toImage(){
         let img = document.createElement("div");
-        img.className ="anime__image hvr-float-shadow"
+        let title = document.createElement("p");
+
+        img.className ="anime__image hvr-float-shadow content__before"
         img.style.background = "url(" + this.image + ") center no-repeat";
         img.style.backgroundSize = "cover";
 
+        title.textContent = this.title;
+
+        img.appendChild(title);
         return img;
     }
 }
