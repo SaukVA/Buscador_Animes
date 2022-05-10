@@ -71,19 +71,32 @@ body{
 .content{
     display: flex;
     justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 15px;
+    gap: 20px;
 }
 
 .anime{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .anime__image{
-    border-radius: 8px;
+    border-radius: 9px;
+    width: 225px;
+    height: 337px;
+    box-shadow: 3px 4px 13px 0px rgb(1 0 0 / 66%);
+    border: solid 3px;
+}
+
+.anime__text{
+    min-width: 100%;
 }
 
 .footer{
