@@ -25,7 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: auto;
+    margin-top: 120px;
 }
 
 .title__text{
@@ -74,7 +74,7 @@ body{
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
-    padding-top: 15px;
+    padding-top: 30px;
     margin-bottom: 20px;
     gap: 40px;
 }
@@ -137,3 +137,15 @@ body{
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+
+  /* Animacionese ========================================================================== */
+
+@keyframes slidein {
+    from{
+      margin-top: 120px;
+    }
+  
+    to{
+      margin-top: 20px;
+    }
+  }
